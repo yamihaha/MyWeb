@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>211 宿舍</title>
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .bg-image {
+    /* 使用你的背景图片URL */
+    background-image: url('../image/background_xiaokui.jfif');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 100px; /* 字号加大 */
+    color: #333;
+    font-weight: bold; /* 加粗 */
+    margin-bottom: 50px; /* 给标题和图片之间增加一些间距 */
+  }
+
+  .circle-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .circle-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 50px;
+    transition: transform 0.5s ease;
+  }
+
+  .circle-image:hover {
+    transform: scale(1.1);
+  }
+
+  .circle-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .image-text {
+    margin-top: 10px; /* 图片和文字之间的间距 */
+    font-size: 25px; /* 文字大小 */
+    color: #666; /* 文字颜色 */
+  }
+</style>
+</head>
+<body>
+
+<div class="bg-image">
+  <div class="title">211 宿舍</div>
+  <div class="circle-images">
+    <a href="https://yamihaha.github.io/MyWeb/index.html">
+      <div class="circle-image">
+        <img src="../image/xiaoxin_honglian.jfif" alt="圆形图片1">
+      </div>
+      <div class="image-text">吴博浪 U202113915</div>
+    </a>
+    <a href="https://sakaraever.github.io/web/">
+      <div class="circle-image">
+        <img src="../image/song.jpg" alt="圆形图片2">
+      </div>
+      <div class="image-text">宋试翼 U202114810</div>
+    </a>
+  </div>
+</div>
+
+</body>
+</html>

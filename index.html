@@ -67,8 +67,32 @@
     max-width: 500px; /* 长度限制 */
     margin-top: 20px;
   }
+  .left-picture {
+    position: fixed;
+    top: 580px;
+    left: 1650px;
+    border-radius: 50%;
+    transition: transform 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+  .left-picture:hover {
+    transform: scale(1.15);
+  }
+  .left-picture img {
+    width: 180px;
+    height: 180px;
+    border-radius: 20px;
+  }
+  .left-picture-text {
+    margin-top: 7px; 
+    font-size: 20px; 
+    color: #333; 
+  }
   a {
-    text-decoration: none;
+    text-decoration: underline;
+    color: #333; 
   }
   h1, h2, p {
     margin: 0 0 10px 0;
@@ -77,14 +101,19 @@
 </head>
 <body>
 
+<a href="./web/dorm.html" class="left-picture">
+  <img src="./image/dorm.png" alt="返回宿舍">
+  <div class="left-picture-text">返回宿舍</div> 
+</a>
+
 <div class="outer-container">
   <div class="container">
     <div class="left-side">
+      <!-- 原有的头像图片 -->
       <img src="./image/xiaoxin.png" alt="蜡笔小新头像" class="profile-picture">
     </div>
     <div class="right-side">
       <h1>野原新之助</h1>
-      
       <p><strong>姓   名：</strong>野原新之助</p>
       <p><strong>年   龄：</strong>5岁</p>
       <p><strong>身   份：</strong>双叶幼稚园向日葵小班学生</p>
