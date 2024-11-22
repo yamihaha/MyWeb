@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>野原小白</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    font-size: 20px; /* 增加默认字体大小 */
+  }
+  .outer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(13, 253, 221, 0.85); /* 半透明绿色背景 */
+    border-radius: 15px; /* 圆角 */
+  }
+  .grand-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* 使用视口高度来确保背景图片足够大 */
+    background-image: url('../image/background_xiaobai2.jfif'); /* 设置背景图片 */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* 固定背景图片 */
+    opacity: 0.8;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .container {
+    display: flex;
+    width: 100%;
+  }
+  .left-side {
+    width: 30%;
+    text-align: center;
+  }
+  .right-side {
+    width: 70%;
+    padding-left: 20px;
+  }
+  .profile-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  .family-pictures {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0px;
+    width: 100%;
+    padding: 20px;
+  }
+  .family-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 10px;
+    transition: transform 0.3s ease;
+  }
+  .family-picture:hover {
+    transform: scale(1.1);
+  }
+  .divider {
+    width: 100%;
+    height: 2px;
+    background-color: #f61717;
+    margin: 20px 0;
+  }
+  .self-introduction {
+    background-color: rgba(23, 234, 241, 0.5); 
+    padding: 20px;
+    border-radius: 10px; /* 圆角 */
+    max-width: 500px; /* 长度限制 */
+    margin-top: 20px;
+  }
+
+  .self-introduction p {
+    margin-top: 0px; /* 调整<p>标签的上边距 */
+  }
+
+  h1 {
+    margin: 0 0 10px 0;
+    position: relative;
+  }
+  h1::after {
+    content: '';
+    display: block;
+    width: 180px; /* 控制横线的长度 */
+    height: 2px;
+    background-color: #000; /* 横线颜色 */
+  }
+  a {
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+
+<div class="grand-container">
+  <div class="outer-container">
+    <div class="container">
+      <div class="left-side">
+        <img src="../image/xiaobai_3.png" alt="小白头像" class="profile-picture">
+      </div>
+      <div class="right-side">
+        <h1>野原小白</h1>
+        
+        <p><strong>姓   名：</strong>野原小白</p>
+        <p><strong>年   龄：</strong>3 个半月</p>
+        <p><strong>身   份：</strong>我是小白 / 野原家的小狗</p>
+        <p><strong>特   技：</strong>“棉花糖”（把身体卷成球形）和挠痒痒（抓小鸡鸡），当然这些是跟小新学习的</p>
+        <p><strong>住   地：</strong>日本埼玉县春日部市</p>
+        <p><strong>我的独白：</strong></p>
+        <div class="self-introduction">
+          <p>
+            &nbsp; &nbsp; 我因为毛色为雪白、体型酷似棉花糖，所以被小新取名小白。<br><br>
+            &nbsp; &nbsp; 小新经常偷懒忘记带我散步，但是我会自己一个人去散步；忘记被喂食的时候我也会在商店街表演技艺，春日部的人们都很好；在大人都不在家时，我还会照顾小葵<br><br>
+            &nbsp; &nbsp; 小新一家给了我很多快乐和温暖，我很感谢他们！
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="family-pictures">
+      <a href="../index.html"><img src="../image/xiaoxin_honglian.jfif" alt="小新" class="family-picture"></a>
+      <a href="../web/meiya.html"><img src="../image/xiaobai_meiya.png" alt="美伢" class="family-picture"></a>
+      <a href="../web/guangzhi.html"><img src="../image/xiaobai_guangzhi.png" alt="广志" class="family-picture"></a>
+      <a href="../web/xiaokui.html"><img src="../image/xiaobai_xiaokui.png" alt="小葵" class="family-picture"></a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

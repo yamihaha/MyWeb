@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>野原美伢</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    font-size: 20px; /* 增加默认字体大小 */
+  }
+  .outer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(252, 58, 210, 0.966); /* 半透明绿色背景 */
+    border-radius: 15px; /* 圆角 */
+  }
+  .grand-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* 使用视口高度来确保背景图片足够大 */
+    background-image: url('../image/background_meiya.jfif'); /* 设置背景图片 */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* 固定背景图片 */
+    opacity: 0.8;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .container {
+    display: flex;
+    width: 100%;
+  }
+  .left-side {
+    width: 30%;
+    text-align: center;
+  }
+  .right-side {
+    width: 70%;
+    padding-left: 20px;
+  }
+  .profile-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  .family-pictures {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0px;
+    width: 100%;
+    padding: 20px;
+  }
+  .family-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 10px;
+    transition: transform 0.3s ease;
+  }
+  .family-picture:hover {
+    transform: scale(1.1);
+  }
+  .divider {
+    width: 100%;
+    height: 2px;
+    background-color: #f61717;
+    margin: 20px 0;
+  }
+  .self-introduction {
+    background-color: rgba(23, 234, 241, 0.5); 
+    padding: 20px;
+    border-radius: 10px; /* 圆角 */
+    max-width: 500px; /* 长度限制 */
+    margin-top: 20px;
+  }
+
+  .self-introduction p {
+    margin-top: 0px; /* 调整<p>标签的上边距 */
+  }
+
+  h1 {
+    margin: 0 0 10px 0;
+    position: relative;
+  }
+  h1::after {
+    content: '';
+    display: block;
+    width: 180px; /* 控制横线的长度 */
+    height: 2px;
+    background-color: #000; /* 横线颜色 */
+  }
+  a {
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+
+<div class="grand-container">
+  <div class="outer-container">
+    <div class="container">
+      <div class="left-side">
+        <img src="../image/meiya_1.jfif" alt="美伢头像" class="profile-picture">
+      </div>
+      <div class="right-side">
+        <h1>野原美伢</h1>
+        
+        <p><strong>姓   名：</strong>野原美伢</p>
+        <p><strong>年   龄：</strong>29 岁</p>
+        <p><strong>身   份：</strong>家庭主妇 / 小新温柔的妈妈</p>
+        <p><strong>爱   好：</strong>喜欢布丁、甜品，喜欢帅哥</p>
+        <p><strong>住   地：</strong>日本埼玉县春日部市</p>
+        <p><strong>我的独白：</strong></p>
+        <div class="self-introduction">
+          <p>
+            &nbsp; &nbsp; 我一直觉得我是个幸福的妈妈。我的儿子小新虽然调皮，但是也给我带来了许多温暖和惊喜。我的女儿小葵很听话，她现在还是个宝宝，真的很期待她长大以后的样子。当然，还有我的丈夫，我很爱他！<br><br>
+            &nbsp; &nbsp; 我虽然平时要打理家务，穿的朴素了一些，但我心里可是有一颗名流的梦。话说我昨晚上又梦到我穿着礼服和凯文·科斯特纳一起共舞，把我激动坏了；<br><br>
+            &nbsp; &nbsp; 当然，我肚子上的肉肉什么时候能和我说：“再见美伢，我要去旅行了” 。诶 ~
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="family-pictures">
+      <a href="../index.html"><img src="../image/xiaoxin_1.png" alt="小新" class="family-picture"></a>
+      <a href="../web/xiaokui.html"><img src="../image/meiya_xiaokui_2.png" alt="小葵" class="family-picture"></a>
+      <a href="../web/guangzhi.html"><img src="../image/father_1.jfif" alt="广志" class="family-picture"></a>
+      <a href="../web/xiaobai.html"><img src="../image/xiaobai.png" alt="小白" class="family-picture"></a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

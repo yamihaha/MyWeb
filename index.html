@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>蜡笔小新</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    font-size: 20px; /* 增加默认字体大小 */
+  }
+  .outer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 128, 0, 0.2); /* 半透明绿色背景 */
+    border-radius: 15px; /* 圆角 */
+  }
+  .container {
+    display: flex;
+    width: 100%;
+  }
+  .left-side {
+    width: 30%;
+    text-align: center;
+  }
+  .right-side {
+    width: 70%;
+    padding-left: 20px;
+  }
+  .profile-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  .family-pictures {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    width: 100%;
+    padding: 20px;
+  }
+  .family-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 10px;
+    transition: transform 0.3s ease;
+  }
+  .family-picture:hover {
+    transform: scale(1.1);
+  }
+  .divider {
+    width: 100%;
+    height: 2px;
+    background-color: #ccc;
+    margin: 20px 0;
+  }
+  .self-introduction {
+    background-color: rgba(23, 234, 241, 0.5); 
+    padding: 20px;
+    border-radius: 10px; /* 圆角 */
+    max-width: 500px; /* 长度限制 */
+    margin-top: 20px;
+  }
+  a {
+    text-decoration: none;
+  }
+  h1, h2, p {
+    margin: 0 0 10px 0;
+  }
+</style>
+</head>
+<body>
+
+<div class="outer-container">
+  <div class="container">
+    <div class="left-side">
+      <img src="./image/xiaoxin.png" alt="蜡笔小新头像" class="profile-picture">
+    </div>
+    <div class="right-side">
+      <h1>野原新之助</h1>
+      
+      <p><strong>姓   名：</strong>野原新之助</p>
+      <p><strong>年   龄：</strong>5岁</p>
+      <p><strong>身   份：</strong>双叶幼稚园向日葵小班学生</p>
+      <p><strong>爱   好：</strong>和美女搭讪、看动感超人、吃小熊饼干</p>
+      <p><strong>住   地：</strong>日本埼玉县春日部市</p>
+      <p><strong>我的独白：</strong></p>
+      <div class="self-introduction">
+        <p>
+          &nbsp; &nbsp; 我是一个 5 岁小孩，一个很乖很乖的小孩。我有一个很爱我的妈妈和爸爸，虽然妈妈美伢经常在我头顶揍出一个大包。<br>
+          &nbsp; &nbsp; 我最喜欢的就是漂亮大姐姐，我最讨厌的是吃青椒。动感超人是我的偶像，我的玩具箱里有动感超人和萨达姆机器人，这两个是我最喜欢的玩具。
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="family-pictures">
+    <a href="./web/meiya.html"><img src="./image/mather.png" alt="妈妈" class="family-picture"></a>
+    <a href="./web/guangzhi.html"><img src="./image/father_1.jfif" alt="爸爸" class="family-picture"></a>
+    <a href="./web/xiaokui.html"><img src="./image/sister.png" alt="妹妹" class="family-picture"></a>
+    <a href="./web/xiaobai.html"><img src="./image/xiaobai.png" alt="小白" class="family-picture"></a>
+  </div>
+</div>
+
+</body>
+</html>
