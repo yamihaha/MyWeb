@@ -69,8 +69,8 @@
   }
   .left-picture {
     position: fixed;
-    top: 580px;
-    left: 1650px;
+    top: 61%;
+    left: 86%;
     border-radius: 50%;
     transition: transform 0.5s ease;
     display: flex;
@@ -97,9 +97,35 @@
   h1, h2, p {
     margin: 0 0 10px 0;
   }
+  .creator-info {
+    position: fixed;
+    top: 2%;
+    left: 2%;
+    border-radius: 20px;
+    background-color: rgba(35, 189, 0, 0.5); 
+    padding: 10px;
+    color: rgb(2, 0, 0);
+    font-size: 22px;
+    transition: transform 0.5s ease;
+    font-family: '楷体', 'KaiTi', 'SimKai', serif; 
+  }
+  .creator-info:hover {
+    transform: scale(1.15);
+  }
+  .creator-info h1 {
+    font-family: 'Playfair Display', serif; 
+  }
 </style>
 </head>
 <body>
+
+<div class="creator-info">
+  <h1>Web Maker：</h1>
+  <p>姓名：郑博浪</p>
+  <p>专业：挖掘机技术</p>
+  <p>班级：7218</p>
+  <p>宿舍：633</p>
+</div>
 
 <a href="./web/dorm.html" class="left-picture">
   <img src="./image/dorm.png" alt="返回宿舍">
